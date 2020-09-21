@@ -51,7 +51,7 @@ namespace Domain
             }
 
             int length = number.Length - 1;
-            Int64 plot1 = Convert.ToInt64(number.Substring(0, number.Length - 1));
+            Int64 plot1 = Convert.ToInt64(number.Substring(0, length));
             Int64 plot2 = Convert.ToInt64(number[length].ToString());
             Int64 result = plot1 - plot2;
             return Calculate(Convert.ToString(result));
